@@ -2,9 +2,9 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-	<link rel="icon" type="image/jpg" href="favicon.png">
+    <link rel="icon" type="image/jpg" href="favicon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ArevClient - Лучший бесплатный чит на майнкрафт 1.16.5</title> 
+    <title>ArevClient - Лучший бесплатный чит на майнкрафт 1.16.5</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <style>
         * {
@@ -14,19 +14,20 @@
         }
 
         :root {
-            --primary: #3b82f6;
-            --primary-light: #60a5fa;
-            --primary-lighter: #93c5fd;
-            --primary-dark: #2563eb;
-            --bg-dark: #0a1628;
-            --bg-medium: #1a2d4a;
+            --primary: #9096cf;
+            --primary-light: #939ce4;
+            --primary-lighter: #aeb4f0;
+            --primary-dark: #7f88c8;
+            --bg-dark: #14172a;
+            --bg-medium: #1e2342;
+            --bg-accent: #252b54;
             --glass-bg: rgba(255, 255, 255, 0.08);
-            --glass-border: rgba(255, 255, 255, 0.15);
+            --glass-border: rgba(147, 156, 228, 0.18);
         }
 
         body {
             font-family: 'Inter', sans-serif;
-            background: linear-gradient(135deg, var(--bg-dark) 0%, var(--bg-medium) 50%, #0d1f3c 100%);
+            background: linear-gradient(135deg, var(--bg-dark) 0%, var(--bg-medium) 50%, var(--bg-accent) 100%);
             min-height: 100vh;
             color: #ffffff;
             overflow-x: hidden;
@@ -49,9 +50,9 @@
             height: 200%;
             top: -50%;
             left: -50%;
-            background-image: 
-                linear-gradient(rgba(59, 130, 246, 0.03) 1px, transparent 1px),
-                linear-gradient(90deg, rgba(59, 130, 246, 0.03) 1px, transparent 1px);
+            background-image:
+                linear-gradient(rgba(144, 150, 207, 0.05) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(147, 156, 228, 0.05) 1px, transparent 1px);
             background-size: 60px 60px;
             animation: gridMove 20s linear infinite;
             transform: perspective(500px) rotateX(60deg);
@@ -113,7 +114,7 @@
         .orb-5 {
             width: 350px;
             height: 350px;
-            background: radial-gradient(circle, #818cf8 0%, transparent 70%);
+            background: radial-gradient(circle, #939ce4 0%, transparent 70%);
             top: 70%;
             left: 10%;
             animation-delay: -5s;
@@ -148,7 +149,7 @@
         }
 
         .particle.glow {
-            box-shadow: 0 0 10px rgba(59, 130, 246, 0.5);
+            box-shadow: 0 0 10px rgba(147, 156, 228, 0.6);
         }
 
         @keyframes rise {
@@ -214,7 +215,7 @@
             background: rgba(255, 255, 255, 0.12);
             backdrop-filter: blur(25px);
             -webkit-backdrop-filter: blur(25px);
-            border: 1px solid rgba(255, 255, 255, 0.2);
+            border: 1px solid rgba(147, 156, 228, 0.24);
         }
 
         .glass-hover {
@@ -223,9 +224,9 @@
 
         .glass-hover:hover {
             background: rgba(255, 255, 255, 0.15);
-            border-color: rgba(255, 255, 255, 0.3);
+            border-color: rgba(147, 156, 228, 0.35);
             transform: translateY(-5px) scale(1.02);
-            box-shadow: 0 20px 60px rgba(59, 130, 246, 0.2);
+            box-shadow: 0 20px 60px rgba(147, 156, 228, 0.2);
         }
 
         header {
@@ -238,7 +239,7 @@
         }
 
         header.scrolled {
-            background: rgba(10, 22, 40, 0.95);
+            background: rgba(20, 23, 42, 0.95);
             backdrop-filter: blur(20px);
             box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
         }
@@ -263,7 +264,7 @@
 
         .logo img {
             height: 45px;
-            filter: drop-shadow(0 0 15px rgba(59, 130, 246, 0.6));
+            filter: drop-shadow(0 0 15px rgba(147, 156, 228, 0.65));
             animation: logoFloat 4s ease-in-out infinite, logoPulse 2s ease-in-out infinite;
         }
 
@@ -278,17 +279,17 @@
 
         @keyframes logoPulse {
             0%, 100% {
-                filter: drop-shadow(0 0 15px rgba(59, 130, 246, 0.6));
+                filter: drop-shadow(0 0 15px rgba(147, 156, 228, 0.65));
             }
             50% {
-                filter: drop-shadow(0 0 25px rgba(59, 130, 246, 0.9));
+                filter: drop-shadow(0 0 25px rgba(147, 156, 228, 0.95));
             }
         }
 
         .logo-text {
             font-size: 24px;
             font-weight: 800;
-            background: linear-gradient(135deg, #ffffff 0%, var(--primary-lighter) 100%);
+            background: linear-gradient(135deg, #ffffff 0%, var(--primary-light) 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -339,7 +340,7 @@
 
         .nav-links a:hover {
             color: #ffffff;
-            text-shadow: 0 0 20px rgba(59, 130, 246, 0.5);
+            text-shadow: 0 0 20px rgba(147, 156, 228, 0.55);
         }
 
         .nav-links a:hover::before {
@@ -366,7 +367,7 @@
             left: 50%;
             width: 800px;
             height: 800px;
-            background: radial-gradient(circle, rgba(59, 130, 246, 0.1) 0%, transparent 70%);
+            background: radial-gradient(circle, rgba(147, 156, 228, 0.14) 0%, transparent 70%);
             transform: translate(-50%, -50%);
             animation: heroPulse 5s ease-in-out infinite;
         }
@@ -452,20 +453,20 @@
         .badge-dot {
             width: 10px;
             height: 10px;
-            background: #22c55e;
+            background: #939ce4;
             border-radius: 50%;
             animation: pulse 2s infinite;
-            box-shadow: 0 0 10px #22c55e;
+            box-shadow: 0 0 10px #939ce4;
         }
 
         @keyframes pulse {
             0%, 100% {
                 transform: scale(1);
-                box-shadow: 0 0 10px #22c55e;
+                box-shadow: 0 0 10px #939ce4;
             }
             50% {
                 transform: scale(1.2);
-                box-shadow: 0 0 20px #22c55e, 0 0 40px #22c55e;
+                box-shadow: 0 0 20px #939ce4, 0 0 40px #939ce4;
             }
         }
 
@@ -568,12 +569,12 @@
         .btn-primary {
             background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
             color: #ffffff;
-            box-shadow: 0 15px 50px rgba(59, 130, 246, 0.4), inset 0 1px 0 rgba(255,255,255,0.2);
+            box-shadow: 0 15px 50px rgba(147, 156, 228, 0.35), inset 0 1px 0 rgba(255,255,255,0.2);
         }
 
         .btn-primary:hover {
             transform: translateY(-5px) scale(1.02);
-            box-shadow: 0 25px 70px rgba(59, 130, 246, 0.5), inset 0 1px 0 rgba(255,255,255,0.2);
+            box-shadow: 0 25px 70px rgba(147, 156, 228, 0.45), inset 0 1px 0 rgba(255,255,255,0.2);
         }
 
         .btn-primary:active {
@@ -583,13 +584,13 @@
         .btn-secondary {
             background: rgba(255, 255, 255, 0.1);
             color: #ffffff;
-            border: 1px solid rgba(255, 255, 255, 0.2);
+            border: 1px solid rgba(147, 156, 228, 0.22);
             backdrop-filter: blur(10px);
         }
 
         .btn-secondary:hover {
-            background: rgba(255, 255, 255, 0.2);
-            border-color: rgba(255, 255, 255, 0.4);
+            background: rgba(147, 156, 228, 0.15);
+            border-color: rgba(147, 156, 228, 0.45);
             transform: translateY(-5px);
             box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
         }
@@ -644,7 +645,7 @@
             border-radius: 26px;
             z-index: -1;
             animation: borderGlow 4s ease infinite;
-            opacity: 0.7;
+            opacity: 0.75;
         }
 
         @keyframes borderGlow {
@@ -663,7 +664,7 @@
             left: 50%;
             width: 100%;
             height: 100%;
-            background: radial-gradient(circle, rgba(59, 130, 246, 0.3) 0%, transparent 60%);
+            background: radial-gradient(circle, rgba(147, 156, 228, 0.3) 0%, transparent 60%);
             transform: translate(-50%, -50%);
             filter: blur(40px);
             z-index: -2;
@@ -869,7 +870,7 @@
             left: -50%;
             width: 200%;
             height: 200%;
-            background: radial-gradient(circle, rgba(59, 130, 246, 0.1) 0%, transparent 50%);
+            background: radial-gradient(circle, rgba(147, 156, 228, 0.1) 0%, transparent 50%);
             opacity: 0;
             transition: opacity 0.5s ease;
         }
@@ -885,14 +886,14 @@
         .feature-card:hover {
             transform: translateY(-15px);
             background: rgba(255, 255, 255, 0.12);
-            box-shadow: 0 30px 80px rgba(59, 130, 246, 0.15);
+            box-shadow: 0 30px 80px rgba(147, 156, 228, 0.16);
         }
 
         .feature-icon {
             width: 70px;
             height: 70px;
             border-radius: 20px;
-            background: linear-gradient(135deg, rgba(59, 130, 246, 0.2) 0%, rgba(59, 130, 246, 0.05) 100%);
+            background: linear-gradient(135deg, rgba(144, 150, 207, 0.2) 0%, rgba(147, 156, 228, 0.08) 100%);
             display: flex;
             align-items: center;
             justify-content: center;
@@ -968,7 +969,7 @@
             left: -100%;
             width: 300%;
             height: 300%;
-            background: conic-gradient(from 0deg, transparent, rgba(59, 130, 246, 0.1), transparent 30%);
+            background: conic-gradient(from 0deg, transparent, rgba(147, 156, 228, 0.12), transparent 30%);
             animation: rotateBg 10s linear infinite;
         }
 
@@ -982,7 +983,7 @@
             content: '';
             position: absolute;
             inset: 1px;
-            background: rgba(10, 22, 40, 0.9);
+            background: rgba(20, 23, 42, 0.9);
             border-radius: 23px;
         }
 
@@ -1038,8 +1039,8 @@
 
         .feature-tag {
             padding: 10px 20px;
-            background: rgba(59, 130, 246, 0.1);
-            border: 1px solid rgba(59, 130, 246, 0.2);
+            background: rgba(147, 156, 228, 0.1);
+            border: 1px solid rgba(147, 156, 228, 0.22);
             border-radius: 50px;
             font-size: 14px;
             font-weight: 500;
@@ -1048,9 +1049,9 @@
         }
 
         .feature-tag:hover {
-            background: rgba(59, 130, 246, 0.2);
+            background: rgba(147, 156, 228, 0.2);
             transform: translateY(-3px);
-            box-shadow: 0 10px 30px rgba(59, 130, 246, 0.2);
+            box-shadow: 0 10px 30px rgba(147, 156, 228, 0.2);
         }
 
         .download-section {
@@ -1071,7 +1072,7 @@
             left: 50%;
             width: 600px;
             height: 600px;
-            background: radial-gradient(circle, rgba(59, 130, 246, 0.2) 0%, transparent 60%);
+            background: radial-gradient(circle, rgba(147, 156, 228, 0.22) 0%, transparent 60%);
             transform: translate(-50%, -50%);
             animation: downloadGlow 4s ease-in-out infinite;
         }
@@ -1101,7 +1102,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            box-shadow: 0 30px 80px rgba(59, 130, 246, 0.4);
+            box-shadow: 0 30px 80px rgba(147, 156, 228, 0.35);
             animation: iconBounce 3s ease-in-out infinite;
             position: relative;
         }
@@ -1207,13 +1208,13 @@
 
         .footer-logo img {
             height: 40px;
-            filter: drop-shadow(0 0 10px rgba(59, 130, 246, 0.4));
+            filter: drop-shadow(0 0 10px rgba(147, 156, 228, 0.45));
         }
 
         .footer-logo span {
             font-size: 20px;
             font-weight: 700;
-            background: linear-gradient(135deg, #ffffff, var(--primary-lighter));
+            background: linear-gradient(135deg, #ffffff, var(--primary-light));
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
@@ -1246,7 +1247,7 @@
 
         .scroll-mouse:hover {
             border-color: var(--primary-light);
-            box-shadow: 0 0 20px rgba(59, 130, 246, 0.3);
+            box-shadow: 0 0 20px rgba(147, 156, 228, 0.3);
         }
 
         .scroll-wheel {
@@ -1293,12 +1294,21 @@
             position: fixed;
             width: 400px;
             height: 400px;
-            background: radial-gradient(circle, rgba(59, 130, 246, 0.1) 0%, transparent 70%);
+            background: radial-gradient(circle, rgba(147, 156, 228, 0.12) 0%, transparent 70%);
             border-radius: 50%;
             pointer-events: none;
             z-index: 9999;
             transform: translate(-50%, -50%);
             transition: opacity 0.3s ease;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
         }
 
         @media (max-width: 1024px) {
@@ -1444,24 +1454,24 @@
                         </div>
                         <h1>Лучший <span>бесплатный чит</span> на Minecraft 1.16.5</h1>
                         <p class="hero-description">
-                            ArevClient — это мощный и безопасный чит-клиент для Minecraft, 
-                            который работает на большинстве популярных серверов. 
+                            ArevClient — это мощный и безопасный чит-клиент для Minecraft,
+                            который работает на большинстве популярных серверов.
                             Простой в использовании, с красивым интерфейсом и регулярными обновлениями.
                         </p>
                         <div class="hero-buttons">
                             <a href="https://t.me/arevclient/333" class="btn btn-primary" target="_blank">
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
-                                    <polyline points="7 10 12 15 17 10"/>
-                                    <line x1="12" y1="15" x2="12" y2="3"/>
+                                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                    <polyline points="7 10 12 15 17 10"></polyline>
+                                    <line x1="12" y1="15" x2="12" y2="3"></line>
                                 </svg>
                                 Скачать бесплатно
                             </a>
                             <a href="#features" class="btn btn-secondary">
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <circle cx="12" cy="12" r="10"/>
-                                    <polyline points="12 16 16 12 12 8"/>
-                                    <line x1="8" y1="12" x2="16" y2="12"/>
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <polyline points="12 16 16 12 12 8"></polyline>
+                                    <line x1="8" y1="12" x2="16" y2="12"></line>
                                 </svg>
                                 Узнать больше
                             </a>
@@ -1485,18 +1495,18 @@
                         <div class="floating-elements">
                             <div class="floating-icon">
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
                                 </svg>
                             </div>
                             <div class="floating-icon">
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+                                    <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
                                 </svg>
                             </div>
                             <div class="floating-icon">
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <circle cx="12" cy="12" r="3"/>
-                                    <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+                                    <circle cx="12" cy="12" r="3"></circle>
+                                    <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
                                 </svg>
                             </div>
                         </div>
@@ -1513,7 +1523,7 @@
                 <div class="section-header">
                     <span class="section-tag glass">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
                         </svg>
                         Возможности
                     </span>
@@ -1526,47 +1536,47 @@
                     <div class="feature-card glass">
                         <div class="feature-icon">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <circle cx="12" cy="12" r="10"/>
-                                <circle cx="12" cy="12" r="6"/>
-                                <circle cx="12" cy="12" r="2"/>
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <circle cx="12" cy="12" r="6"></circle>
+                                <circle cx="12" cy="12" r="2"></circle>
                             </svg>
                         </div>
                         <h3 class="feature-title">AttackAura</h3>
                         <p class="feature-description">
-                            Продвинутая система автоматической атаки, которая работает на многих 
-                            популярных серверах. Умные ротации, обход античитов и гибкие настройки 
+                            Продвинутая система автоматической атаки, которая работает на многих
+                            популярных серверах. Умные ротации, обход античитов и гибкие настройки
                             для максимальной эффективности в бою.
                         </p>
                     </div>
                     <div class="feature-card glass">
                         <div class="feature-icon">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
-                                <line x1="8" y1="21" x2="16" y2="21"/>
-                                <line x1="12" y1="17" x2="12" y2="21"/>
-                                <path d="M6 8l4 4-4 4"/>
-                                <line x1="12" y1="16" x2="18" y2="16"/>
+                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                                <line x1="8" y1="21" x2="16" y2="21"></line>
+                                <line x1="12" y1="17" x2="12" y2="21"></line>
+                                <path d="M6 8l4 4-4 4"></path>
+                                <line x1="12" y1="16" x2="18" y2="16"></line>
                             </svg>
                         </div>
                         <h3 class="feature-title">MineAssist</h3>
                         <p class="feature-description">
-                            Умный X-Ray, обходящий популярные анархии на автошахтах. 
-                            Автоматически выкидывает мусор из инвентаря, чтобы вы могли 
+                            Умный X-Ray, обходящий популярные анархии на автошахтах.
+                            Автоматически выкидывает мусор из инвентаря, чтобы вы могли
                             сосредоточиться на добыче ценных ресурсов.
                         </p>
                     </div>
                     <div class="feature-card glass">
                         <div class="feature-icon">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
-                                <circle cx="9" cy="7" r="4"/>
-                                <line x1="17" y1="8" x2="23" y2="8"/>
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="9" cy="7" r="4"></circle>
+                                <line x1="17" y1="8" x2="23" y2="8"></line>
                             </svg>
                         </div>
                         <h3 class="feature-title">NameProtect</h3>
                         <p class="feature-description">
-                            Полезный модуль для медиакреаторов и стримеров. 
-                            Скрывает ваш никнейм во избежание таргета, бана или 
+                            Полезный модуль для медиакреаторов и стримеров.
+                            Скрывает ваш никнейм во избежание таргета, бана или
                             других неприятностей от зрителей.
                         </p>
                     </div>
@@ -1608,17 +1618,16 @@
                     <div class="download-content">
                         <div class="download-icon">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
-                                <polyline points="7 10 12 15 17 10"/>
-                                <line x1="12" y1="15" x2="12" y2="3"/>
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                <polyline points="7 10 12 15 17 10"></polyline>
+                                <line x1="12" y1="15" x2="12" y2="3"></line>
                             </svg>
                         </div>
                         <h2>Готовы начать?</h2>
                         <p>Скачайте ArevClient бесплатно и присоединяйтесь к нашему сообществу</p>
-                        <a href="https://t.me/arevclient/333
-							" class="btn btn-primary download-btn" target="_blank">
+                        <a href="https://t.me/arevclient/333" class="btn btn-primary download-btn" target="_blank">
                             <svg viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+                                <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"></path>
                             </svg>
                             Скачать из Telegram
                         </a>
@@ -1648,6 +1657,7 @@
 
     <script>
         const particlesContainer = document.getElementById('particles');
+
         for (let i = 0; i < 50; i++) {
             const particle = document.createElement('div');
             particle.className = 'particle' + (Math.random() > 0.5 ? ' glow' : '');
@@ -1692,10 +1702,12 @@
         });
 
         const cursorGlow = document.getElementById('cursorGlow');
-        let mouseX = 0, mouseY = 0;
-        let glowX = 0, glowY = 0;
+        let mouseX = 0;
+        let mouseY = 0;
+        let glowX = 0;
+        let glowY = 0;
 
-        document.addEventListener('mousemove', (e) => {
+        document.addEventListener('mousemove', e => {
             mouseX = e.clientX;
             mouseY = e.clientY;
         });
@@ -1707,6 +1719,7 @@
             cursorGlow.style.top = glowY + 'px';
             requestAnimationFrame(animateCursor);
         }
+
         animateCursor();
 
         const observerOptions = {
@@ -1717,7 +1730,7 @@
         const observer = new IntersectionObserver((entries) => {
             entries.forEach((entry, index) => {
                 if (entry.isIntersecting) {
-                    entry.target.style.transitionDelay = (index * 0.1) + 's';
+                    entry.target.style.transitionDelay = index * 0.1 + 's';
                     entry.target.classList.add('visible');
                 }
             });
@@ -1735,15 +1748,16 @@
         document.head.appendChild(style);
 
         document.querySelectorAll('.feature-tag').forEach((tag, index) => {
-            tag.style.animationDelay = (index * 0.05) + 's';
+            tag.style.animationDelay = index * 0.05 + 's';
             tag.style.opacity = '0';
             tag.style.animation = 'fadeUp 0.5s ease forwards';
-            tag.style.animationDelay = (0.5 + index * 0.05) + 's';
+            tag.style.animationDelay = 0.5 + index * 0.05 + 's';
         });
 
         const screenshotWrapper = document.querySelector('.screenshot-wrapper');
+
         if (screenshotWrapper) {
-            screenshotWrapper.addEventListener('mousemove', (e) => {
+            screenshotWrapper.addEventListener('mousemove', e => {
                 const rect = screenshotWrapper.getBoundingClientRect();
                 const x = e.clientX - rect.left;
                 const y = e.clientY - rect.top;
@@ -1760,12 +1774,13 @@
         }
 
         let ticking = false;
+
         window.addEventListener('scroll', () => {
             if (!ticking) {
                 window.requestAnimationFrame(() => {
                     const scrolled = window.pageYOffset;
                     document.querySelectorAll('.orb').forEach((orb, index) => {
-                        const speed = 0.05 + (index * 0.02);
+                        const speed = 0.05 + index * 0.02;
                         orb.style.transform = `translateY(${scrolled * speed}px)`;
                     });
                     ticking = false;
